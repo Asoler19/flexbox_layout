@@ -1,0 +1,125 @@
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+  body{
+    /* background-color: palevioletred; */
+
+   
+  }
+
+  img{
+    border-radius: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: thin solid black; */
+    /* background-color: palevioletred; */
+    
+  }
+
+  .container img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 150px;
+  }
+
+  input {
+    background-image: none;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    width: 100%;
+    padding: 1rem;
+    border: thin solid black;
+    border-left: none;
+    border-radius: 0px, 3px;
+  }
+
+  input:hover{
+    box-shadow: 0 0 10px rgb(178, 34, 34)
+  }
+
+  label {
+    color: #606468;
+    padding: 0.7rem;
+    border: thin solid black;
+    border-radius: 3px 0px 0px;
+    border-right: none;
+    background: linear-gradient(hotpink,orange);
+  }
+
+  i.material-icons {
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+  }
+
+  .form-field {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    background-color: white;
+    color: black;
+    border: thin solid black;
+  }
+
+  button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+    background: radial-gradient(orange, hotpink);
+    border-radius: 3px;
+  }
+
+  .button.login-button:hover {
+    animation: bounce 1s;
+  }
+
+  input.checkbox{
+    align-self: right;
+    box-shadow: none;
+    width: 10px;
+
+  }
+  .footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+
+  }
